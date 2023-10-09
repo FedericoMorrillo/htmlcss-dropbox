@@ -4,3 +4,93 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*reset*/
+/*common*/
+h1{
+    font-size: 58px;
+}
+.flex{
+    display: flex;
+}
+
+.blue-box{
+    padding: 5px 10px;
+    background-color: #0061ff;  
+}
+.blue-box > a{
+   color: white !important;
+   text-decoration: none;
+}
+.space{
+    margin:20px 0;
+}
+/*common*/
+/*typography*/
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+/*typography*/
+/*header*/
+header{
+    margin:0;
+}
+.navbar{
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+}
+.navbar img{
+     width: 130px;
+}
+
+.navbar ul li{
+    list-style: none;
+    align-self: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid transparent;
+}
+.navbar ul li:hover{
+border-color: black;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.intestazione{
+    max-width: 100vw;
+    background-color: #b4d0e7;
+    padding-top: 100px;
+}
+.contenitore{
+    max-width: 800px;
+    margin: 0px auto;
+}
+.box1{
+   width: 32%;
+   margin-top: 30px;
+}
+.box2{
+   width: 68%;
+    margin-top: 20px;
+    padding: 10px 0 0 0;
+    position: relative;
+}
+.box2 > img{
+    width: 100%;
+    position: absolute;
+}
+#intestazione-link{
+    display: inline-block;
+}
+.freccia{
+    font-size: 30px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+/*header*/
