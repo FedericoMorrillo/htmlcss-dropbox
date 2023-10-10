@@ -7,12 +7,17 @@
 
 /*reset*/
 /*common*/
+
 h1 {
     font-size: 60px;
 }
 
 .flex {
     display: flex;
+}
+
+.space {
+    margin: 20px 0 30px 0;
 }
 
 .blue-box {
@@ -34,10 +39,13 @@ h1 {
 ul {
     list-style: none;
 }
-.border{
+
+.border {
     border: 1px solid #d0d0d3;
 }
-
+img{
+    width: 100%;
+}
 /*common*/
 /*typography*/
 body {
@@ -64,9 +72,9 @@ header {
     z-index: 9999;
     background-color: white;
 }
-
-.navbar img {
-    width: 120px;
+.navbar a{
+    text-decoration: none;
+    color: black;
 }
 
 .navbar ul li {
@@ -76,11 +84,6 @@ header {
 
 .navbar ul li:hover {
     border-color: black;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: black;
 }
 
 #logo {
@@ -101,19 +104,14 @@ header {
     padding: 20px 40px 30px 40px;
 }
 
-.box1 {
+#jumbotron .contenitore .box2 {
+    margin-top: 30px;
+    width: 70%;
+}
+
+#jumbotron .contenitore .box1 {
     width: 30%;
     padding-top: 30px;
-}
-
-.box2 {
-    width: 70%;
-    margin-top: 30px;
-    padding: 0 10px;
-}
-
-.box2>img {
-    width: 100%;
 }
 
 #intestazione-link {
@@ -128,11 +126,12 @@ header {
 
 /*header*/
 /*main*/
-section{
+section {
     margin: 30px;
 }
+
 main .contenitore {
-    margin: 120px auto;
+    margin: 120px auto 0 auto;
     width: 800px;
 }
 
@@ -141,9 +140,13 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
-    padding-bottom: 20px;
+    font-size: 22px;
+    padding-bottom: 10px;
 
+}
+
+h4 {
+    padding-bottom: 20px;
 }
 
 .radio-btn {
@@ -187,19 +190,49 @@ i {
     padding-top: 1.85px;
 }
 
-.space {
-    margin: 20px 0 30px 0;
-}
-
 hr {
     width: 45px;
     color: #d0d0d3;
     margin-bottom: 30px;
 }
-main .contenitore .box1{
+main .contenitore .box1 {
     order: 2;
+    width: 35%;
+    padding-left: 20px;
 }
-.personalizzato{
+
+main .contenitore .box2 {
+    width: 65%;
+    padding-right: 10px;
+}
+.orizzontale {
     justify-content: space-between;
+    padding: 20px;
+    margin: 0;
+}
+.cont-2{
+    margin: 20px auto !important;
+}
+.partner-btn{
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin:30px 0;
+}
+.partner-btn a{
+text-decoration: none;
+color: black;
+}
+.cards-box{
+flex-wrap: wrap;
+gap:30px;
+ margin-top: 60px;
+}
+.cards{
+    width: calc(100% /3 - 20px);
+    padding: 10px;
+}
+#maggiori-info{
+    display: block;
+    margin-top: 30px;
 }
 /*main*/
