@@ -2,15 +2,21 @@
 <html lang="en">
 
 <head>
+    <!--font open sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--/font open sans-->
+    <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--/font awesome-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--/css-->
     <title>Dropbox</title>
 </head>
 
@@ -19,7 +25,7 @@
         <!--barra di ricerca -->
         <div class="navbar flex">
             <ul class="flex">
-                <li>
+                <li id="logo">
                     <a href=""><img src="img/logo-small.png" alt="logo-small"></a>
                 </li>
                 <li>
@@ -42,7 +48,7 @@
                 <li>
                     <a href="">Accedi</a>
                 </li>
-                <li>
+                <li id="btn">
                     <div class="blue-box">
                         <a href="">Inizia</a>
                     </div>
@@ -51,18 +57,18 @@
         </div>
         <!--/barra di ricerca-->
         <!--intestazione-->
-        <div class="intestazione">
+        <section id="jumbotron">
             <div class="contenitore">
                 <h1> Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="flex">
                     <!--contenitore informazioni-->
                     <div class="box1">
                         <p>
-                        Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso
                             posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente
                             e integrato per ottimizzare il flusso di lavoro esigente.
                         </p>
-                        <div class="blue-box space" id="intestazione-link">
+                        <div class="blue-box" id="intestazione-link">
                             <a href="">Inizia la tua prova gratuita</a>
                         </div>
                         <div>
@@ -80,10 +86,179 @@
                     <!--/contenitore immagine-->
                 </div>
             </div>
-        </div>
+        </section>
         <!--/intestazione-->
     </header>
     <main>
+        <section>
+            <!--contenitore colonne-->
+            <div class="contenitore">
+                <h2>Trova il piano business che fa per te</h2>
+                <div>
+                    <span class="radio-btn"><input type="radio">Fatturazione mensile</span>
+                    <span class="radio-btn"><input type="radio">Fatturazione annuale</span>
+                </div>
+                <!--colonne-->
+                <div class="flex">
+                    <div class="tab border">
+                        <!--intestazione colonna-->
+                        <div class="piano padd border">
+                            <span><i class="fa-solid fa-user"></i></span> Singolo
+                        </div>
+                        <!--/intestazione colonna-->
+                        <!--contenuto colonna-->
+                        <div class="dettagli-piano padd">
+                            <h3>Professional</h3>
+                            <div>
+                                <strong>€12,00</strong>
+                                <div class="tariffa">/mese</div>
+                                <ul>
+                                    <li class="flex"><i class="fa-solid fa-user fav-i"></i><span>1 utente</span>
+                                    </li>
+                                    <li class="flex"><i class="fa-solid fa-folder fav-i"></i><span> 5 TB di spazio di archiviazione sicuro</span>
+                                    </li>
+                                    <li class="flex"><i class="fa-solid fa-share-nodes fav-i"></i><span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                                    </li>
+                                </ul>
+                                <div class="blue-box space">
+                                    <a href="">Prova gratis per 30 giorni</a>
+                                </div>
+                                <div class="space">
+                                    oppure <a href="">acquista ora</a>
+                                </div>
+                            </div>
+                            <hr>
+                           <h4>Punti salienti del Piano</h4>
+                           <ul>
+                            <li class="flex">
+                                <i class="fa-solid fa-check" style="color: #0061ff;"></i><span>Invia file a 100 GB con Dropbox Trasfert</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa-solid fa-check" style="color: #0061ff;"></i><span>Cartelle offline su dispositivi mobili</span>
+                            </li>
+                           </ul>
+                        </div>
+                        <!--/contenuto colonna-->
+                    </div>
+                    <div class="tab border">
+                        <!--intestazione colonna-->
+                        <div class="piano padd border">
+                            <span><i class="fa-solid fa-users"></i></span> Team
+                        </div>
+                        <!--/intestazione colonna-->
+                        <!--contenuto colonna-->
+                        <div class="dettagli-piano padd">
+                            <h3>Advanced</h3>
+                            <div>
+                                <strong>€19,00</strong>
+                                <div class="tariffa">/utente/mese</div>
+                                <ul>
+                                    <li class="flex"><i class="fa-solid fa-user"></i><span>1 utente</span>
+                                    </li>
+                                    <li class="flex"><i class="fa-solid fa-folder"></i><span>5 TB di spazio di archiviazione sicuro</span>
+                                    </li>
+                                    <li class="flex"><i class="fa-solid fa-share-nodes"></i><span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                                    </li>
+                                </ul>
+                                <div class="blue-box space">
+                                    <a href="">Prova gratis per 30 giorni</a>
+                                </div>
+                                <div class="space">
+                                    oppure <a href="">acquista ora</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Punti salienti del Piano</h4>
+                            <ul>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i><span>Nessun limite di spazio per i file</span>
+                                </li>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i><span>Cartelle offline su dispositivi mobili</span>
+                                </li>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i><span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                </li>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i><span>Possibilità di inserire nuovi membri del team</span>
+                                </li>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i><span>Gestione dei permessi in base ai ruoli</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/contenuto colonna-->
+                    </div>
+                    <div class="tab border">
+                        <!--intestazione colonna-->
+                        <div class="piano padd border">
+                            <span><i class="fa-solid fa-building"></i></span> Azienda
+                        </div>
+                        <!--/intestazione colonna-->
+                        <!--contenuto colonna-->
+                        <div class="dettagli-piano padd">
+                            <h3>Enterprise</h3>
+                            <div>
+                                <strong>Contattaci</strong>
+                                <div>
+                                    <ul id="ul-3box">
+                                        <li class="flex"><i class="fa-solid fa-user fav-i"></i> <span>1 utente</span>
+                                        </li>
+                                        <li class="flex"><i class="fa-solid fa-folder fav-i"></i><span>5 TB di spazio  di  archiviazione sicuro</span>
+                                        </li>
+                                        <li class="flex"><i class="fa-solid fa-share-nodes fav-i"></i><span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                                        </li>
+                                    </ul>
+                                    <div class="blue-box space">
+                                        <a href="">Contattaci</a>
+                                    </div>
+                                    <div class="space">
+                                        oppure <a href="">acquista ora</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Punti salienti del Piano</h4>
+                            <ul>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i> <span>Cartelle offline su dispositivi mobili</span>
+                                </li>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i> <span>Servizio assistenza 24/h</span>
+                                </li>
+                                <li class="flex">
+                                    <i class="fa-solid fa-check" style="color: #0061ff;"></i> <span>Possibilità di personalizzazione totale</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/contenuto colonna-->
+                    </div>
+                </div>
+                <!--/colonne-->
+            </div>
+            <!--/contenitore colonne-->
+            <!--contenitore colonna orizzontale-->
+            <div class="contenitore">
+                <div class="piano padd border">
+                    <span><i class="fa-solid fa-building"></i></span> Team
+                </div>
+                <div class="personalizzato flex border" >
+                    <div class="box1 padd">
+                        <div class="blue-box"><a href="">Contatta l' ufficio vendite</a></div>
+                    </div>
+                    <div class="box2">
+                        <h3>Enterprise</h3>
+                        <h4>contatta l' ufficio vendite per i prezzi</h4>
+                        <div class="padd">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su quasiasi scala</div>
+                    </div>
+
+                </div>
+            </div>
+            <!--/contenitore colonna orizzontale-->
+        </section>
+        <section>
+
+        </section>
     </main>
 </body>
 

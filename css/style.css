@@ -1,96 +1,205 @@
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*reset*/
 /*common*/
-h1{
-    font-size: 58px;
+h1 {
+    font-size: 60px;
 }
-.flex{
+
+.flex {
     display: flex;
 }
 
-.blue-box{
+.blue-box {
     padding: 5px 10px;
-    background-color: #0061ff;  
+    background-color: #0061ff;
+    display: block;
+    text-align: center;
 }
-.blue-box > a{
-   color: white !important;
-   text-decoration: none;
+
+.blue-box>a {
+    color: white !important;
+    text-decoration: none;
 }
-.space{
-    margin:20px 0;
+
+.padd {
+    padding: 10px 10px;
 }
+
+ul {
+    list-style: none;
+}
+.border{
+    border: 1px solid #d0d0d3;
+}
+
 /*common*/
 /*typography*/
-body{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
 }
+
 /*typography*/
 /*header*/
-header{
-    margin:0;
+header {
+    margin: 0;
+    background-color: #b4d0e7;
 }
-.navbar{
-    font-size: 12px;
+
+.navbar {
+    font-size: 14px;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
-    top:0;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     z-index: 9999;
     background-color: white;
 }
-.navbar img{
-     width: 130px;
+
+.navbar img {
+    width: 120px;
 }
 
-.navbar ul li{
-    list-style: none;
-    align-self: center;
-    padding: 10px 12px;
+.navbar ul li {
+    padding: 30px 12px;
     border-bottom: 1px solid transparent;
 }
-.navbar ul li:hover{
-border-color: black;
+
+.navbar ul li:hover {
+    border-color: black;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: black;
 }
-.intestazione{
-    max-width: 100vw;
-    background-color: #b4d0e7;
-    padding-top: 100px;
+
+#logo {
+    border: none;
+    align-self: center;
 }
-.contenitore{
-    max-width: 800px;
+
+#btn {
+    border: none;
+    align-self: center;
+}
+
+#jumbotron .contenitore {
+    max-width: 1000px;
     margin: 0px auto;
-}
-.box1{
-   width: 32%;
-   margin-top: 30px;
-}
-.box2{
-   width: 68%;
-    margin-top: 20px;
-    padding: 10px 0 0 0;
     position: relative;
+    bottom: -100px;
+    padding: 20px 40px 30px 40px;
 }
-.box2 > img{
+
+.box1 {
+    width: 30%;
+    padding-top: 30px;
+}
+
+.box2 {
+    width: 70%;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.box2>img {
     width: 100%;
-    position: absolute;
 }
-#intestazione-link{
+
+#intestazione-link {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.freccia {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+/*header*/
+/*main*/
+section{
+    margin: 30px;
+}
+main .contenitore {
+    margin: 120px auto;
+    width: 800px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+
+}
+
+.radio-btn {
+    padding: 40px 30px 20px 10px;
     display: inline-block;
 }
-.freccia{
-    font-size: 30px;
-    margin-top: 30px;
-    padding-bottom: 10px;
+
+.radio-btn input {
+    margin-right: 5px;
 }
-/*header*/
+
+.tab {
+    width: calc(100% / 3 - 20px);
+    margin: 0 10px;
+}
+
+.piano {
+    text-align: center;
+}
+
+.dettagli-piano ul {
+    padding-top: 40px;
+}
+
+.dettagli-piano ul li {
+    padding-bottom: 20px;
+    gap: 5px;
+
+}
+
+.tariffa {
+    color: #6699ce;
+    padding-top: 10px;
+}
+
+#ul-3box {
+    padding-top: 70px
+}
+
+i {
+    padding-top: 1.85px;
+}
+
+.space {
+    margin: 20px 0 30px 0;
+}
+
+hr {
+    width: 45px;
+    color: #d0d0d3;
+    margin-bottom: 30px;
+}
+main .contenitore .box1{
+    order: 2;
+}
+.personalizzato{
+    justify-content: space-between;
+}
+/*main*/
