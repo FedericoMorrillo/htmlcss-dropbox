@@ -26,7 +26,14 @@ h1 {
     display: block;
     text-align: center;
 }
-
+.white-btn{
+    background-color: white;
+    padding: 5px 20px;
+}
+.white-btn a{
+    color: black;
+    text-decoration: none;
+}
 .blue-box>a {
     color: white !important;
     text-decoration: none;
@@ -45,6 +52,10 @@ ul {
 }
 img{
     width: 100%;
+}
+hr{
+    width: 20%;
+    color: #d0d0d3;
 }
 /*common*/
 /*typography*/
@@ -71,6 +82,7 @@ header {
     width: 100%;
     z-index: 9999;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
 }
 .navbar a{
     text-decoration: none;
@@ -91,7 +103,7 @@ header {
     align-self: center;
 }
 
-#btn {
+.btn {
     border: none;
     align-self: center;
 }
@@ -126,9 +138,6 @@ header {
 
 /*header*/
 /*main*/
-section {
-    margin: 30px;
-}
 
 main .contenitore {
     margin: 120px auto 0 auto;
@@ -190,9 +199,7 @@ i {
     padding-top: 1.85px;
 }
 
-hr {
-    width: 45px;
-    color: #d0d0d3;
+.dettagli-piano hr {
     margin-bottom: 30px;
 }
 main .contenitore .box1 {
@@ -217,6 +224,7 @@ main .contenitore .box2 {
     border: 1px solid black;
     padding: 10px 10px;
     margin:30px 0;
+    background-color: white;
 }
 .partner-btn a{
 text-decoration: none;
@@ -233,6 +241,88 @@ gap:30px;
 }
 #maggiori-info{
     display: block;
-    margin-top: 30px;
+    margin: 30px 0 60px 0;
+}
+.partnership{
+    width: 100%
+}
+.ptn-col{
+   width: calc(100% / 2 - 5px);
+    
+    flex-wrap: wrap;
+}
+.ptn-box{
+    width: 50%;  
+    height: 50%;
+    justify-content: center;
+}
+.ptn-col img{
+width: 50%;
+filter: invert(1);
+}
+.ptn-middle img{
+    filter:none;
+    width: 50%;
+}
+
+#designit-logo{
+    background-color: #a2d39b;
+    border: 14px solid #d1e9cd;
+    
+}
+#asu{
+    background-color: #61082b;
+}
+#uf img{
+    height: 40px;
+}
+#uf{
+    background-color: #0093ce;
+    align-items: center;
+}
+#topps{
+    background-color: #ff1c1c;
+}
+.ptn-middle{
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+}
+.ptn-middle hr{
+    margin: 50px 0;
+}
+#box-f{
+    padding-top: 30px;
+}
+#wbr{
+    background-color: #d5001f;
+}
+#hearts-c{
+    background-color: #b4d0e7;
+}
+#lonely-plt{
+    background-color: #0d2481;
+}
+#clear-chn{
+    background-color: #ffd830;
+}
+.prova-free{
+    width: 100%;
+    background-color: #b4d0e7;
+}
+.prova-free .contenitore{
+    margin: 0 auto;
+    padding: 100px 0;
+    justify-content: space-between;
+    color: #61082b;
+}
+.question-box{
+    justify-content: space-between;
+    align-items: center;
+}
+.info hr{
+    width: 100%;
+}
+.domanda{
+    padding: 30px 0;
 }
 /*main*/
